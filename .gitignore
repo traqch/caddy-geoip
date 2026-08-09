@@ -1,0 +1,17 @@
+# Go
+*.test
+*.out
+/vendor/
+
+# GeoIP databases are never committed — licensed data, and ~60 MB each.
+*.mmdb
+*.mmdb.gz
+*.tar.gz
+# ...except the small fixtures the tests build against.
+!testdata/*.mmdb
+
+# Local caddy builds (xcaddy output)
+/caddy
+/dist/
+
+.DS_Store
